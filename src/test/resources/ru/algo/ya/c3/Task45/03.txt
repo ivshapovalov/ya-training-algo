@@ -1,0 +1,13 @@
+10 20
+........XX..XXXX.XXX
+X.X...XX..XX.XX.....
+.X....XX.XXX..X.XXXX
+....XXX..XX.XX.XXXXX
+.X.X.......XX.X.X.X.
+.X.XX.............XX
+.XX.X..X.XX.XXXXX.XX
+.XX...X.XXX.XXXXX..X
+.............XXXX.XX
+.X..XX.XXXXX.XXX.XXX
+9 8
+3 8

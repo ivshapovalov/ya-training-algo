@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'com.adarshr.test-logger' version '3.2.0'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+group 'ru.algo.ya'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.2'
+}
+
+testlogger {
+    theme 'mocha'
+    slowThreshold 5000
+}
+
+tasks.withType(Test) {
+    testlogger {
+        theme 'standard-parallel'
+    }
+    useJUnitPlatform {
+    }
+
+}
+
