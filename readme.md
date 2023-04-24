@@ -32,16 +32,16 @@
 ### Домашние задания 
 Дивизион В (базовый):
 ---
-| Домашние задания                                               | Решения                                                  |
-|----------------------------------------------------------------|----------------------------------------------------------|
-| [Домашнее задание 1](https://contest.yandex.ru/contest/27393)  | [Решение (искл E,J)](./src/test/java/algo/c1/hw1)        |
-| [Домашнее задание 2](https://contest.yandex.ru/contest/27472)  | [Решение](./src/test/java/algo/c1/hw2)                   |
-| [Домашнее задание 3](https://contest.yandex.ru/contest/27663)  | [Решение (искл F)](./src/test/java/algo/c1/hw3)          |
-| [Домашнее задание 4](https://contest.yandex.ru/contest/27665)  | [Решение (искл F,J)](./src/test/java/algo/c1/hw4)        |
-| [Домашнее задание 5](https://contest.yandex.ru/contest/27794)  | [Решение (искл C,J)](./src/test/java/algo/c1/hw5)        |
-| [Домашнее задание 6](https://contest.yandex.ru/contest/27844)  | [Решение (искл C,H,K)](./src/test/java/algo/c1/hw6)|
-| [Домашнее задание 7](https://contest.yandex.ru/contest/27883)  | [Решение](./src/test/java/algo/c1/hw7)                   |
-| [Домашнее задание 8](https://contest.yandex.ru/contest/28069)  | [Решение](./src/test/java/algo/c1/hw8)                   |
+| Домашние задания                                               | Решения                                                     |
+|----------------------------------------------------------------|-------------------------------------------------------------|
+| [Домашнее задание 1](https://contest.yandex.ru/contest/27393)  | [Решение (искл E,J)](./src/test/java/algo/c1/hw1)           |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/27472)  | [Решение](./src/test/java/algo/c1/hw2)                      |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/27663)  | [Решение (искл F)](./src/test/java/algo/c1/hw3)             |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/27665)  | [Решение (искл F,J)](./src/test/java/algo/c1/hw4)           |
+| [Домашнее задание 5](https://contest.yandex.ru/contest/27794)  | [Решение (искл C,J)](./src/test/java/algo/c1/hw5)           |
+| [Домашнее задание 6](https://contest.yandex.ru/contest/27844)  | [Решение (искл C,H,K)](./src/test/java/algo/c1/hw6)         |
+| [Домашнее задание 7](https://contest.yandex.ru/contest/27883)  | [Решение (искл A,C,D,F,G,I,J)](./src/test/java/algo/c1/hw7) |
+| [Домашнее задание 8](https://contest.yandex.ru/contest/28069)  | [Решение](./src/test/java/algo/c1/hw8)                      |
 
 #### [К Оглавлению](#оглавление)
 

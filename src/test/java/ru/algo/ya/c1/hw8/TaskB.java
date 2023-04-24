@@ -6,11 +6,14 @@ import ru.algo.ya.ContestTask;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /*
-https://contest.yandex.ru/contest/28069/problems/A/
-Высота дерева
+https://contest.yandex.ru/contest/28069/problems/B/
+Глубина добавляемых элементов
 
                         Все языки 	Python 3.6
 Ограничение времени 	2 секунды 	4 секунды
@@ -18,19 +21,19 @@ https://contest.yandex.ru/contest/28069/problems/A/
 Ввод 	                стандартный ввод или input.txt
 Вывод 	                стандартный вывод или output.txt
 
-Реализуйте бинарное дерево поиска для целых чисел. Программа получает на вход последовательность целых чисел и строит из
-них дерево. Элементы в деревья добавляются в соответствии с результатом поиска их места. Если элемент уже существует в
-дереве, добавлять его не надо. Балансировка дерева не производится.
+В бинарное дерево поиска добавляются элементы. Выведите глубину для каждого добавленного элемента в том порядке, как они
+добавлялись. Если элемент уже есть в дереве, то ничего добавлять и выводить не нужно. Глубиной называется расстояние от
+корня дерева до элемента включительно.
 
 Формат ввода
-На вход программа получает последовательность натуральных чисел. Последовательность завершается числом 0, которое
-означает конец ввода, и добавлять его в дерево не надо.
+Вводится последовательность целых чисел, оканчивающаяся нулем. Сам ноль в последовательность не входит. По данной
+последовательности требуется построить дерево.
 
 Формат вывода
-Выведите единственное число – высоту получившегося дерева.
+Выведите ответ на задачу.
 
 */
-public class TaskA extends ContestTask {
+public class TaskB extends ContestTask {
 
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -38,22 +41,25 @@ public class TaskA extends ContestTask {
                     .mapToInt(el -> Integer.valueOf(el).intValue()).toArray();
             Tree tree = new Tree();
             int max = 0;
+            List<Integer> result = new ArrayList<>();
             for (int i = 0; i < nums.length - 1; i++) {
                 int val = nums[i];
                 int level = append(tree, val, 1);
-                max = Math.max(max, level);
+                if (level != 0) {
+                    result.add(level);
+                }
             }
-            System.out.println(max);
+            System.out.println(result.stream().map(el -> String.valueOf(el)).collect(Collectors.joining(" ")));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private static int append(Tree tree, int val, int level) {
-        if (tree.val == val) return level;
-        if (tree.val == 0) {
+        if (tree.val == null) {
             tree.val = val;
-        } else if (val < tree.val) {
+        } else if (tree.val == val) return 0;
+        else if (val < tree.val) {
             if (tree.left == null) {
                 tree.left = new Tree(val);
                 level++;
@@ -75,20 +81,28 @@ public class TaskA extends ContestTask {
     public void test_01() {
         provideConsoleInput("7 3 2 1 9 5 4 6 8 0\n");
         main(new String[0]);
-        String expected = "4\n";
+        String expected = "1 2 3 4 2 3 4 4 3\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
 
     @Test
-    public void test_02() {
-        provideConsoleInput("0\n");
+    public void test_101() {
+        provideConsoleInput("7 3 3 3 3 2 1 9 9 9 9 5 4 6 8 0\n");
         main(new String[0]);
-        String expected = "0\n";
+        String expected = "1 2 3 4 2 3 4 4 3\n";
+        assertStringEqualsIgnoreLineSeparators(expected, getOutput());
+    }
+
+    @Test
+    public void test_102() {
+        provideConsoleInput("1 1 1 0\n");
+        main(new String[0]);
+        String expected = "1\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
 
     static class Tree {
-        int val;
+        Integer val;
         Tree left;
         Tree right;
 
@@ -98,7 +112,5 @@ public class TaskA extends ContestTask {
 
         public Tree() {
         }
-
     }
-
 }
