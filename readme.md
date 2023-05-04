@@ -74,14 +74,17 @@
 + [Домашнее задание 8](https://contest.yandex.ru/contest/29405)
 
 #### Дивизион В (базовый):
-+ [Домашнее задание 1](https://contest.yandex.ru/contest/28730)
-+ [Домашнее задание 2](https://contest.yandex.ru/contest/28738)
-+ [Домашнее задание 3](https://contest.yandex.ru/contest/28964)
-+ [Домашнее задание 4](https://contest.yandex.ru/contest/28970)
-+ [Домашнее задание 5](https://contest.yandex.ru/contest/29075)
-+ [Домашнее задание 6](https://contest.yandex.ru/contest/29188)
-+ [Домашнее задание 7](https://contest.yandex.ru/contest/29396)
-+ [Домашнее задание 8](https://contest.yandex.ru/contest/29403)
+
+| Домашние задания                                               | Решения                                                     |
+|----------------------------------------------------------------|-------------------------------------------------------------|
+| [Домашнее задание 1](https://contest.yandex.ru/contest/28730)  | [Решение](./src/test/java/algo/c2/hw1)                      |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/28738)  |                     |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/28964)  |              |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/28970)  |            |
+| [Домашнее задание 5](https://contest.yandex.ru/contest/29075)  |           |
+| [Домашнее задание 6](https://contest.yandex.ru/contest/29188)  |         |
+| [Домашнее задание 7](https://contest.yandex.ru/contest/29396)  | |
+| [Домашнее задание 8](https://contest.yandex.ru/contest/29403)  |                    |
 
 #### [К Оглавлению](#оглавление)
 
