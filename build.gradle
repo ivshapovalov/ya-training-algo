@@ -11,7 +11,7 @@ configurations {
 
 group 'ru.algo.ya'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '14'
 
 repositories {
     mavenCentral()

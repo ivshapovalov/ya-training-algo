@@ -82,7 +82,8 @@ public class Task27 extends ContestTask {
             }
 
             System.out.print(dp[n][m] + "\n");
-            String way = (path[n][m] == null || path[n][m].isEmpty()) ? "" : path[n][m].substring(0, path[n][m].length() - 1);
+            String way = (path[n][m] == null || path[n][m].equals("")) ? ""
+                    : path[n][m].substring(0, path[n][m].length() - 1);
             System.out.print(way + "\n");
         } catch (IOException e) {
             e.printStackTrace();
