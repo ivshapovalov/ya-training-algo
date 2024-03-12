@@ -37,19 +37,19 @@ public class TaskC extends ContestTask {
             int days = Integer.parseInt(reader.readLine().trim());
             int[] prices = Arrays.stream(reader.readLine().trim().split(" "))
                     .mapToInt(el -> Integer.valueOf(el).intValue()).toArray();
-            int[] maxResult = new int[]{0,0,0};
-            int iBuy=0;
+            int[] maxResult = new int[]{0, 0, 0};
+            int iBuy = 0;
             int maxProfit = 0;
-            for(int iSell=1;iSell< prices.length;iSell++){
-                if(prices[iSell]<prices[iBuy]) iBuy = iSell;
-                int amount=1000/prices[iBuy];
-                int profit=amount*(prices[iSell] - prices[iBuy]);
-                if (profit>=maxProfit) {
-                    maxProfit=profit;
-                    maxResult=new int[] {profit,iBuy,iSell};
+            for (int iSell = 1; iSell < prices.length; iSell++) {
+                if (prices[iSell] < prices[iBuy]) iBuy = iSell;
+                int amount = 1000 / prices[iBuy];
+                int profit = amount * (prices[iSell] - prices[iBuy]);
+                if (profit >= maxProfit) {
+                    maxProfit = profit;
+                    maxResult = new int[]{profit, iBuy, iSell};
                 }
             }
-            if (maxResult[0] <=0) {
+            if (maxResult[0] <= 0) {
                 System.out.println("0 0");
             } else {
                 System.out.println((maxResult[1] + 1) + " " + (maxResult[2] + 1));
@@ -76,6 +76,7 @@ public class TaskC extends ContestTask {
         String expected = "0 0\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_001() {
         provideConsoleInput("4\n" +
@@ -84,6 +85,7 @@ public class TaskC extends ContestTask {
         String expected = "0 0\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_002() {
         provideConsoleInput("1\n" +
@@ -92,6 +94,7 @@ public class TaskC extends ContestTask {
         String expected = "0 0\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_003() {
         provideConsoleInput("4\n" +
@@ -100,6 +103,7 @@ public class TaskC extends ContestTask {
         String expected = "1 2\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_004() {
         provideConsoleInput("4\n" +

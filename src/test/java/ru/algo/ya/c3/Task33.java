@@ -3,16 +3,8 @@ package ru.algo.ya.c3;
 import org.junit.jupiter.api.Test;
 import ru.algo.ya.ContestTask;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
 
 /*
 https://contest.yandex.ru/contest/45468/problems/33/

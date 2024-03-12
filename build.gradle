@@ -11,7 +11,8 @@ configurations {
 
 group 'ru.algo.ya'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '14'
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
@@ -33,6 +34,9 @@ tasks.withType(Test) {
     }
     useJUnitPlatform {
     }
+    maxHeapSize = "2048m"
+    maxParallelForks = 1
+    jvmArgs "-Xmx2048m"
 
 }
 

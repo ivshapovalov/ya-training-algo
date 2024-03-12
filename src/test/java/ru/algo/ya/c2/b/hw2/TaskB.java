@@ -6,12 +6,7 @@ import ru.algo.ya.ContestTask;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
 https://contest.yandex.ru/contest/28738/problems/B/
@@ -48,11 +43,11 @@ public class TaskB extends ContestTask {
             int[] coords = Arrays.stream(reader.readLine().trim().split(" "))
                     .mapToInt(el -> Integer.valueOf(el).intValue()).toArray();
             Map<Integer, Integer> dist = new HashMap<>();
-            int prevShop=-1;
+            int prevShop = -1;
             Deque<Integer> houses = new ArrayDeque<>();
             for (int i = 0; i < coords.length; i++) {
                 if (coords[i] == 2) {
-                    prevShop=i;
+                    prevShop = i;
                     while (!houses.isEmpty()) {
                         int houseIndex = houses.poll();
                         int curDistance = i - houseIndex;
@@ -62,7 +57,7 @@ public class TaskB extends ContestTask {
                     }
                 } else if (coords[i] == 1) {
                     houses.push(i);
-                    if (prevShop!=-1) {
+                    if (prevShop != -1) {
                         dist.put(i, i - prevShop);
                     }
 
@@ -81,6 +76,7 @@ public class TaskB extends ContestTask {
         String expected = "3\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_03() {
         provideConsoleInput("0 1 0 0 1 2 2 1 0 2\n");
@@ -112,6 +108,7 @@ public class TaskB extends ContestTask {
         String expected = "1\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_104() {
         provideConsoleInput("1 2 1 1\n");
@@ -119,6 +116,7 @@ public class TaskB extends ContestTask {
         String expected = "2\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_105() {
         provideConsoleInput("2 1 2\n");

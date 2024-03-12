@@ -68,7 +68,7 @@ public class TaskD extends ContestTask {
                     }
                 }
             } else {
-                int foundIndex = Arrays.binarySearch(legs, L / 2-1);
+                int foundIndex = Arrays.binarySearch(legs, L / 2 - 1);
                 if (foundIndex > 0) {
                     System.out.println(legs[foundIndex] + " " + legs[foundIndex + 1]);
                 } else {
@@ -111,6 +111,7 @@ public class TaskD extends ContestTask {
         String expected = "6 8\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_04() {
         provideConsoleInput("4 4\n" +

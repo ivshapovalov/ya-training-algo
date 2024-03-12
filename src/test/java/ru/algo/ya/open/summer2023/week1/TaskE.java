@@ -38,7 +38,7 @@ public class TaskE extends ContestTask {
             String input = reader.readLine().trim();
             String output = "";
             if (input.length() != 1) {
-                for (int i = 0; i <input.length(); i++) {
+                for (int i = 0; i < input.length(); i++) {
                     if (input.charAt(i) != 'a') {
                         if (input.length() % 2 == 1 && i == input.length() / 2) {
                             output = input.substring(0, input.length() - 1) + 'b';
@@ -95,6 +95,7 @@ public class TaskE extends ContestTask {
         String expected = "abb\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_004() {
         provideConsoleInput("aaaa");

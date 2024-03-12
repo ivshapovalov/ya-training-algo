@@ -47,9 +47,9 @@ public class TaskE extends ContestTask {
             int[] input = Arrays.stream(reader.readLine().trim().split(" "))
                     .mapToInt(el -> Integer.valueOf(el).intValue()).toArray();
             Arrays.sort(input);
-            int counter=0;
-            for (int i = 0; i < input.length-1; i++) {
-                counter+=input[i];
+            int counter = 0;
+            for (int i = 0; i < input.length - 1; i++) {
+                counter += input[i];
             }
             System.out.println(counter);
         } catch (IOException e) {

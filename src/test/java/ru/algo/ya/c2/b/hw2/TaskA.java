@@ -32,18 +32,18 @@ public class TaskA extends ContestTask {
 
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String line=reader.readLine().trim();
-            int max=0;
-            int counter=0;
-            while(line!=null && !"0".equals(line)) {
-                int cur=Integer.parseInt(line);
-                if (cur>max) {
-                    max=cur;
-                    counter=1;
-                }else if (cur==max) {
+            String line = reader.readLine().trim();
+            int max = 0;
+            int counter = 0;
+            while (line != null && !"0".equals(line)) {
+                int cur = Integer.parseInt(line);
+                if (cur > max) {
+                    max = cur;
+                    counter = 1;
+                } else if (cur == max) {
                     counter++;
                 }
-                line=reader.readLine().trim();
+                line = reader.readLine().trim();
             }
 
             System.out.println(counter);

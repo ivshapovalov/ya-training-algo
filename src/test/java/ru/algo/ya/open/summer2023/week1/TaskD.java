@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -56,7 +54,7 @@ public class TaskD extends ContestTask {
                 diff = Math.min(diff, Math.abs(MINUTES.between(sortedSchedule.get(i), sortedSchedule.get(i + 1))));
             }
             diff = Math.min(diff,
-                    1440-Math.abs(MINUTES.between(sortedSchedule.get(0),
+                    1440 - Math.abs(MINUTES.between(sortedSchedule.get(0),
                             sortedSchedule.get(sortedSchedule.size() - 1))));
 
             System.out.println(diff);

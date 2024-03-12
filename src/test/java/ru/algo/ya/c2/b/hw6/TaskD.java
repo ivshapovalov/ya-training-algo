@@ -49,9 +49,9 @@ public class TaskD extends ContestTask {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             long[] nums = Arrays.stream(reader.readLine().trim().split(" "))
                     .mapToLong(el -> Long.valueOf(el)).toArray();
-            int A = (int)nums[0];
+            int A = (int) nums[0];
             long K = nums[1];
-            int B = (int)nums[2];
+            int B = (int) nums[2];
             long M = nums[3];
             long X = nums[4];
 
@@ -63,29 +63,29 @@ public class TaskD extends ContestTask {
         }
     }
 
-    private static long binSearch( int A, long K,int B, long M, long X) {
-        long l=0;
-        long r=Long.MAX_VALUE/((A+B)/2);
-        while (l<=r) {
+    private static long binSearch(int A, long K, int B, long M, long X) {
+        long l = 0;
+        long r = Long.MAX_VALUE / ((A + B) / 2);
+        while (l <= r) {
             long m = l + (r - l) / 2;
-            BigInteger amount=getAmount(A,K,B,M,m);
-            if (amount.compareTo(BigInteger.valueOf(X))<0) {
-                l = m+1;
+            BigInteger amount = getAmount(A, K, B, M, m);
+            if (amount.compareTo(BigInteger.valueOf(X)) < 0) {
+                l = m + 1;
             } else {
-                r = m-1;
+                r = m - 1;
             }
         }
 
         return l;
     }
 
-    private static BigInteger getAmount(int A, long K,int B,  long M, long m) {
-        long restDays1= m / K;
-        long restDays2= m / M;
-        long workDays1=m-restDays1;
-        long workDays2=m-restDays2;
-        BigInteger result1=BigInteger.valueOf(A).multiply(BigInteger.valueOf(workDays1));
-        BigInteger result2=BigInteger.valueOf(B).multiply(BigInteger.valueOf(workDays2));
+    private static BigInteger getAmount(int A, long K, int B, long M, long m) {
+        long restDays1 = m / K;
+        long restDays2 = m / M;
+        long workDays1 = m - restDays1;
+        long workDays2 = m - restDays2;
+        BigInteger result1 = BigInteger.valueOf(A).multiply(BigInteger.valueOf(workDays1));
+        BigInteger result2 = BigInteger.valueOf(B).multiply(BigInteger.valueOf(workDays2));
         return result1.add(result2);
     }
 

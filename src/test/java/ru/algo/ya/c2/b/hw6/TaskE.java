@@ -3,11 +3,7 @@ package ru.algo.ya.c2.b.hw6;
 import org.junit.jupiter.api.Test;
 import ru.algo.ya.ContestTask;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Arrays;
 
 /*
@@ -34,7 +30,7 @@ public class TaskE extends ContestTask {
 
         int count = 0;
         long end_of_segment = -1_000_000_001;
-        for (int point:points             ) {
+        for (int point : points) {
             if (point > end_of_segment) {
                 count++;
                 end_of_segment = point + step;

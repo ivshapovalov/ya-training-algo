@@ -9,6 +9,7 @@
 - [Тренировки 1.0](#тренировки-10)
 - [Тренировки 2.0](#тренировки-20)
 - [Тренировки 3.0](#тренировки-30)
+- [Тренировки 4.0](#тренировки-40)
 
 ---
 
@@ -75,16 +76,16 @@
 
 #### Дивизион В (базовый):
 
-| Домашние задания                                               | Решения                                |
-|----------------------------------------------------------------|----------------------------------------|
-| [Домашнее задание 1](https://contest.yandex.ru/contest/28730)  | [Решение](./src/test/java/algo/c2/hw1) |
-| [Домашнее задание 2](https://contest.yandex.ru/contest/28738)  | [Решение](./src/test/java/algo/c2/hw2) |
-| [Домашнее задание 3](https://contest.yandex.ru/contest/28964)  | [Решение](./src/test/java/algo/c2/hw3) |
-| [Домашнее задание 4](https://contest.yandex.ru/contest/28970)  | [Решение](./src/test/java/algo/c2/hw4) |
-| [Домашнее задание 5](https://contest.yandex.ru/contest/29075)  | [Решение](./src/test/java/algo/c2/hw5) |
-| [Домашнее задание 6](https://contest.yandex.ru/contest/29188)  |                                        |
-| [Домашнее задание 7](https://contest.yandex.ru/contest/29396)  |                                        |
-| [Домашнее задание 8](https://contest.yandex.ru/contest/29403)  |                                        |
+| Домашние задания                                               | Решения                                 |
+|----------------------------------------------------------------|-----------------------------------------|
+| [Домашнее задание 1](https://contest.yandex.ru/contest/28730)  | [Решение](./src/test/java/algo/c2/hw1)  |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/28738)  | [Решение](./src/test/java/algo/c2/hw2)  |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/28964)  | [Решение](./src/test/java/algo/c2/hw3)  |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/28970)  | [Решение](./src/test/java/algo/c2/hw4)  |
+| [Домашнее задание 5](https://contest.yandex.ru/contest/29075)  | [Решение](./src/test/java/algo/c2/hw5)  |
+| [Домашнее задание 6](https://contest.yandex.ru/contest/29188)  | [Решение](./src/test/java/algo/c2/hw6)  |
+| [Домашнее задание 7](https://contest.yandex.ru/contest/29396)  | [Решение](./src/test/java/algo/c2/hw7) |
+| [Домашнее задание 8](https://contest.yandex.ru/contest/29403)  |                                         |
 
 #### [К Оглавлению](#оглавление)
 
@@ -107,12 +108,40 @@
 ### Домашние задания
 #### Дивизион B (базовый):
 
-| Домашние задания                                               | Решения                                                 |
-|----------------------------------------------------------------|---------------------------------------------------------|
-| [Все домашние задания (40 шт)](https://contest.yandex.ru/contest/45468)  | [Решение](./src/test/java/algo/c3)          |
-| [Спринт (5 шт)](https://contest.yandex.ru/contest/46304) | [Решение (искл 42,43,44,45)](./src/test/java/algo/c3) |
+| Домашние задания                                                        | Решения                                                 |
+|-------------------------------------------------------------------------|---------------------------------------------------------|
+| [Все домашние задания (40 шт)](https://contest.yandex.ru/contest/45468) | [Решение](./src/test/java/algo/c3)          |
+| [Спринт (5 шт)](https://contest.yandex.ru/contest/46304)                | [Решение (искл 42,43,44,45)](./src/test/java/algo/c3) |
 
 ---
+
+## Тренировки 4.0
+
+### Видео
++ [Открытие](https://youtube.com/live/id5sNdvFqdo)
++ [Лекция 1. Сортировки: быстрая, слиянием и поразрядная](https://youtube.com/live/e3WhTm1G)
++ [Лекция 2: Хеши для строк](https://www.youtube.com/watch?v=nSgDk6P_8pI)
++ [Лекция 3: Кратчайшие пути во взвешенных графах](https://www.youtube.com/watch?v=sGU4xxp9N3o)
++ [Лекция 4: Перебор и методы его оптимизации ](https://www.youtube.com/watch?v=PNzrc52lrSw)
++ [Разбор заданий разминки](https://www.youtube.com/watch?v=7OM4ryaqHyU)
++ [Разбор ДЗ 1](https://www.youtube.com/watch?v=x1uJkaK_j9g)
++ [Разбор ДЗ 2](https://www.youtube.com/watch?v=-ThQ3Fnh-14)
++ [Разбор ДЗ 3]()
++ [Разбор ДЗ 4]()
+
+
+### Домашние задания
+
+| Домашние задания                                               | Решения                                                |
+|----------------------------------------------------------------|--------------------------------------------------------|
+| [Разминка (10 шт)](https://contest.yandex.ru/contest/53027/)   | [Решение (Кроме C](./src/test/java/algo/c4/hw0)        |
+| [Домашнее задание 1](https://contest.yandex.ru/contest/53029/) | [Решение](./src/test/java/algo/c4/hw1)                 |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/53030/) | [Решение](./src/test/java/algo/c4/hw2)                 |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/53031/) | [Решение (Кроме E)](./src/test/java/algo/c4/hw3)       |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/53032/) | [Решение (Кроме B,C,D,E)](./src/test/java/algo/c4/hw4) |
+| [Спринт]()                                                     | [Решение](./src/test/java/algo/c4/sprint)              |
+|----------------------------------------------------------------| ----------------------------------------               |
+
 
 #### [К Оглавлению](#оглавление)
 

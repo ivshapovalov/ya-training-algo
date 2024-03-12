@@ -36,10 +36,10 @@ public class TaskC extends ContestTask {
 
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String line=reader.readLine().trim();
-            int counter=0;
-            for (int i = 0; i <line.length()/2 ; i++) {
-                if (line.charAt(i)!=line.charAt(line.length()-1-i)) {
+            String line = reader.readLine().trim();
+            int counter = 0;
+            for (int i = 0; i < line.length() / 2; i++) {
+                if (line.charAt(i) != line.charAt(line.length() - 1 - i)) {
                     counter++;
                 }
             }

@@ -6,7 +6,6 @@ import ru.algo.ya.ContestTask;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
 
 /*
 https://contest.yandex.ru/contest/50158/problems/A/
@@ -34,12 +33,12 @@ public class TaskA extends ContestTask {
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = Integer.parseInt(reader.readLine().trim());
-            int remain=n;
+            int remain = n;
             int l = 1;
             do {
-                remain-=l;
+                remain -= l;
                 l++;
-            } while (remain -l >=0);
+            } while (remain - l >= 0);
             System.out.println(--l);
 
         } catch (IOException e) {
@@ -62,6 +61,7 @@ public class TaskA extends ContestTask {
         String expected = "3\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
     }
+
     @Test
     public void test_001() {
         provideConsoleInput("1\n");
@@ -80,7 +80,7 @@ public class TaskA extends ContestTask {
 
     @Test
     public void test_003() {
-        provideConsoleInput(Integer.MAX_VALUE+"\n");
+        provideConsoleInput(Integer.MAX_VALUE + "\n");
         main(new String[0]);
         String expected = "65535\n";
         assertStringEqualsIgnoreLineSeparators(expected, getOutput());
