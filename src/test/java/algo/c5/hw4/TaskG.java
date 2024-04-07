@@ -1,0 +1,84 @@
+package algo.c5.hw4;
+
+import algo.ContestTask;
+import org.junit.jupiter.api.Test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/*
+https://contest.yandex.ru/contest/59542/problems/G/
+Новый офис плюса
+
+Ограничение времени 	5 секунд
+Ограничение памяти 	256Mb
+Ввод 	стандартный ввод или input.txt
+Вывод 	стандартный вывод или output.txt
+
+ Сервис Тындекс.Плюс так быстро растет, что для сотрудников и серверов потребовалось потребовалось построить новый офис.
+
+Участок под застройку представляет из себя клетчатое поле n×m, часть клеток которого пригодна для строительства, а часть
+нет.
+
+Новый офис должен выглядеть как знак "плюс"какого-то целого положительного размера k. Знак "плюс"размера k  — это такая
+клетчатая фигура, состоящая из пяти квадратов k×k клеток, при этом есть один центральный квадрат, а остальные четыре
+являются его соседями по стороне.
+
+Новый офис должен быть как можно больше, поэтому необходимо найти максимальное k, такое что офис удастся разместить на
+участке под застройку.
+
+Определите максимальное k. Гарантируется, что он можно построить офис хотя бы с k=1.
+
+Формат ввода
+В первой строке задано два целых числа n и m (1≤n,m≤2000) — длина и ширина участка под застройку.
+
+В каждой из последующих n строк задана строка, состоящая из m символов, j-й символ в i-й строке равен #, если клетка с
+координатами (i,j) пригодна для строительства и . иначе.
+
+Формат вывода
+Выведите одно целое положительное число —
+максимально возможное k.
+*/
+
+public class TaskG extends ContestTask {
+    public static void main(String[] args) {
+        try (BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void test_001() {
+        provideConsoleInput("9 12\n" +
+                "...##.###...\n" +
+                "...##.###...\n" +
+                ".########...\n" +
+                ".###########\n" +
+                "...#########\n" +
+                "...#########\n" +
+                "......###...\n" +
+                "......###...\n" +
+                "......###...\n");
+        main(new String[0]);
+        String expected = "3\n";
+        assertStringEqualsIgnoreLineSeparators(expected, getOutput());
+    }
+
+    @Test
+    public void test_002() {
+        provideConsoleInput("6 6\n" +
+                ".##...\n" +
+                ".##...\n" +
+                "######\n" +
+                "######\n" +
+                ".##...\n" +
+                ".##...\n");
+        main(new String[0]);
+        String expected = "1\n";
+        assertStringEqualsIgnoreLineSeparators(expected, getOutput());
+    }
+
+}

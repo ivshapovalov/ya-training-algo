@@ -76,16 +76,16 @@
 
 #### Дивизион В (базовый):
 
-| Домашние задания                                               | Решения                                 |
-|----------------------------------------------------------------|-----------------------------------------|
-| [Домашнее задание 1](https://contest.yandex.ru/contest/28730)  | [Решение](./src/test/java/algo/c2/hw1)  |
-| [Домашнее задание 2](https://contest.yandex.ru/contest/28738)  | [Решение](./src/test/java/algo/c2/hw2)  |
-| [Домашнее задание 3](https://contest.yandex.ru/contest/28964)  | [Решение](./src/test/java/algo/c2/hw3)  |
-| [Домашнее задание 4](https://contest.yandex.ru/contest/28970)  | [Решение](./src/test/java/algo/c2/hw4)  |
-| [Домашнее задание 5](https://contest.yandex.ru/contest/29075)  | [Решение](./src/test/java/algo/c2/hw5)  |
-| [Домашнее задание 6](https://contest.yandex.ru/contest/29188)  | [Решение](./src/test/java/algo/c2/hw6)  |
-| [Домашнее задание 7](https://contest.yandex.ru/contest/29396)  | [Решение](./src/test/java/algo/c2/hw7) |
-| [Домашнее задание 8](https://contest.yandex.ru/contest/29403)  |                                         |
+| Домашние задания                                               | Решения                                  |
+|----------------------------------------------------------------|------------------------------------------|
+| [Домашнее задание 1](https://contest.yandex.ru/contest/28730)  | [Решение](./src/test/java/algo/c2/b/hw1) |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/28738)  | [Решение](./src/test/java/algo/c2/b/hw2) |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/28964)  | [Решение](./src/test/java/algo/c2/b/hw3) |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/28970)  | [Решение](./src/test/java/algo/c2/b/hw4) |
+| [Домашнее задание 5](https://contest.yandex.ru/contest/29075)  | [Решение](./src/test/java/algo/c2/b/hw5) |
+| [Домашнее задание 6](https://contest.yandex.ru/contest/29188)  | [Решение](./src/test/java/algo/c2/b/hw6) |
+| [Домашнее задание 7](https://contest.yandex.ru/contest/29396)  | [Решение](./src/test/java/algo/c2/b/hw7) |
+| [Домашнее задание 8](https://contest.yandex.ru/contest/29403)  |                                          |
 
 #### [К Оглавлению](#оглавление)
 
@@ -140,6 +140,33 @@
 | [Домашнее задание 3](https://contest.yandex.ru/contest/53031/) | [Решение (Кроме E)](./src/test/java/algo/c4/hw3)       |
 | [Домашнее задание 4](https://contest.yandex.ru/contest/53032/) | [Решение (Кроме B,C,D,E)](./src/test/java/algo/c4/hw4) |
 | [Спринт]()                                                     | [Решение](./src/test/java/algo/c4/sprint)              |
+|----------------------------------------------------------------| ----------------------------------------               |
+
+---
+
+## Тренировки 5.0
+
+### Видео
++ [Лекция 1: Сложность, тестирование, особые случаи](https://www.youtube.com/watch?v=SVkJ77_Fl1o)
++ [Лекция 2. Линейный поиск](https://www.youtube.com/watch?v=7P4yu7rQADI)
++ [Разбор ДЗ 1](https://www.youtube.com/watch?v=IesJVRj-Q40)
++ [Собеседование по алгоритмам в прямом эфире + его разбор](https://www.youtube.com/watch?v=dRHexm-A9yc)
++ [Лекция 3. Множества и словари](https://www.youtube.com/watch?v=jQOnYzW8ZOE)
++ [Разбор ДЗ 2](https://www.youtube.com/watch?v=PyLX9vzrwqY)
++ [Лекция 3. Бинарный поиск](https://www.youtube.com/watch?v=-B6xvDeGyPg)
++ [Разбор ДЗ 3](https://www.youtube.com/watch?v=GQdvaoPxbZE)
++ [Собеседование по алгоритмам в прямом эфире + его разбор](https://www.youtube.com/watch?v=P5q5jr8Vmgw)
++ [Разбор ДЗ 4](https://www.youtube.com/watch?v=H2qC2rFES-s)
+
+
+### Домашние задания
+
+| Домашние задания                                              | Решения                                                |
+|---------------------------------------------------------------|--------------------------------------------------------|
+| [Домашнее задание 1](https://contest.yandex.ru/contest/59539/) | [Решение (кроме F,G,H,J)](./src/test/java/algo/c5/hw1) |
+| [Домашнее задание 2](https://contest.yandex.ru/contest/59540/) | [Решение (кроме F,G,H,J)](./src/test/java/algo/c5/hw2) |
+| [Домашнее задание 3](https://contest.yandex.ru/contest/59541/) | [Решение (кроме G,H,J)](./src/test/java/algo/c5/hw3)   |
+| [Домашнее задание 4](https://contest.yandex.ru/contest/59542/) | [Решение (B,C)](./src/test/java/algo/c5/hw4)           |
 |----------------------------------------------------------------| ----------------------------------------               |
 
 
